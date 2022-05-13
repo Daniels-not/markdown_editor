@@ -1,0 +1,62 @@
+:root {
+  --backGroundcolor: #111317;
+  --textAreaColor: #ffffff;
+  --outputColor: #222222;
+  --textOutputColor: #ffffff;
+}
+
+/*---------------------------------resets-------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+
+  background-color: var(--backGroundcolor);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+
+.container {
+  display: flex;
+}
+
+.output {
+  width: 40vw;
+  height: 570px;
+  background-color: var(--outputColor);
+  margin-inline: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  outline: none;  
+  color: var(--textOutputColor);
+  line-height: 2.5rem;
+}
+
+.textarea {
+  width: 40vw;
+  height: 570px;
+  background-color: var(--textAreaColor);
+  margin-inline: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  resize: none;
+  padding: 1rem;
+  outline: none;
+  line-height: 2rem;
+}
